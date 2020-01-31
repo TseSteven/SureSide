@@ -4,7 +4,7 @@
 
 Wrong side marker detection system for radiographic image
 
-Easy way to test the application:
+#### Easy way to test the application:
 
 1. Download the Virtualbox ova file 'DR_QC_buster GitHub.ova from'  https://sourceforge.net/projects/sureside/files/
   
@@ -15,7 +15,7 @@ Easy way to test the application:
 4. See result from YOUR_VIRTUAL_IP:5002
 
 
-Difficult way
+#### Difficult way
 
 Download the git repository with command git clone.
 
