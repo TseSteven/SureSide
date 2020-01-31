@@ -1,15 +1,23 @@
-# SureSide
+# SureSide - Wrong side marker detection system for radiographic image
+
 
 A simple radiological quality control applcation to detect falsely applied annotation on radiological image.
 SureSide is a client server application with DICOM capability. 
 By setting up auto DICOM routing from your hospital DICOM server to SureSdie server, radiological image will be analyzed and false marker image will be spotted out.
 
+The following open source projects are used for SureSide project
+
+- DCMTK
+- OpenCV
+- GluonCV
+- RabbitMQ
+- NextGen Connect
+- Postegresql
+- Redis
+- Cockpit
+- Cloud9
 
 ### [Server Installation]
-
-Wrong side marker detection system for radiographic image
-
-#### Easy way to test the application:
 
 1. Download the Virtualbox ova file 'DR_QC_buster GitHub.ova' from  https://sourceforge.net/projects/sureside/files/
   
@@ -19,18 +27,6 @@ Wrong side marker detection system for radiographic image
 
 4. See result from YOUR_VIRTUAL_SERVER_IP:5002
 
-
-#### Difficult way:
-
-Download the git repository with command git clone.
-
-Download the files from https://sourceforge.net/projects/sureside/files/
-
-1. anatomy_classification.params
-2. frozen_east_text_detection.pb
-3. marker_detection.params
-
-and place the files inside folder DR_Warnings/server/app_server/false_annotation/
 
 ### [Client Installation]
 
