@@ -1,12 +1,16 @@
 # SureSide
 
+A simple radiological quality control applcation to detect falsely applied annotation on radiological image.
+It is a client server application with DICOM capability. By setting up auto DICOm routing from your hospital DICOM server to SureSdie server, image 
+
+
 ### [Server Installation]
 
 Wrong side marker detection system for radiographic image
 
 #### Easy way to test the application:
 
-1. Download the Virtualbox ova file 'DR_QC_buster GitHub.ova from'  https://sourceforge.net/projects/sureside/files/
+1. Download the Virtualbox ova file 'DR_QC_buster GitHub.ova' from  https://sourceforge.net/projects/sureside/files/
   
 2. Import the ova and start the virtual server.
 
