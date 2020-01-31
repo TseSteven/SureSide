@@ -7,9 +7,9 @@ Easy way to test the application:
   
 2. Import the ova and start the virtual server.
 
-3.Push DICOM image to virtual DICOM server with AE Title "SURESIDE"
+3. Push DICOM image to virtual DICOM server with AE Title "SURESIDE"
 
-4.See result from YOUR_VIRTUAL_IP:5002
+4. See result from YOUR_VIRTUAL_IP:5002
 
 
 
