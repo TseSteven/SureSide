@@ -1,4 +1,7 @@
 # SureSide
+
+## Server Side
+
 Wrong side marker detection system for radiographic image
 
 Easy way to test the application:
@@ -23,6 +26,8 @@ Download the files from https://sourceforge.net/projects/sureside/files/
 3. marker_detection.params
 
 and place the files inside folder DR_Warnings/server/app_server/false_annotation/
+
+## Client Side
 
 You may download the client for the window pop up alert with file DR Warnings Client.zip from https://sourceforge.net/projects/sureside/files/
 
