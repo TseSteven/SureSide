@@ -3,7 +3,7 @@ Wrong side marker detection system for radiographic image
 
 Easy way to test the application:
 
-1. Download the Virtualbox ova file from  https://sourceforge.net/projects/sureside/files/
+1. Download the Virtualbox ova file DR_QC_buster GitHub.ova from  https://sourceforge.net/projects/sureside/files/
   
 2. Import the ova and start the virtual server.
 
@@ -24,7 +24,7 @@ Download the files from https://sourceforge.net/projects/sureside/files/
 
 and place the files inside folder DR_Warnings/server/app_server/false_annotation/
 
-You
+You may download the client for the alert window pop up with file DR Warnings Client.zip from https://sourceforge.net/projects/sureside/files/
 
 
 
