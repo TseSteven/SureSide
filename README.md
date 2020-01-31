@@ -15,7 +15,7 @@ Wrong side marker detection system for radiographic image
 4. See result from YOUR_VIRTUAL_IP:5002
 
 
-#### Difficult way
+#### Difficult way:
 
 Download the git repository with command git clone.
 
