@@ -24,7 +24,7 @@ Download the files from https://sourceforge.net/projects/sureside/files/
 
 and place the files inside folder DR_Warnings/server/app_server/false_annotation/
 
-You may download the client for the alert window pop up with file DR Warnings Client.zip from https://sourceforge.net/projects/sureside/files/
+You may download the client for the window pop up alert with file DR Warnings Client.zip from https://sourceforge.net/projects/sureside/files/
 
 
 
