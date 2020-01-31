@@ -17,7 +17,7 @@ Wrong side marker detection system for radiographic image
 
 3. Push DICOM image to virtual DICOM server with AE Title "SURESIDE"
 
-4. See result from YOUR_VIRTUAL_IP:5002
+4. See result from YOUR_VIRTUAL_SERVER_IP:5002
 
 
 #### Difficult way:
