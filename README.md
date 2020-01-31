@@ -22,6 +22,8 @@ Download the files
 2. frozen_east_text_detection.pb
 3. marker_detection.params
 
-and place the files inside folder
+and place the files inside folder DR_Warnings/server/app_server/false_annotation/
+
+
 
 
