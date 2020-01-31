@@ -16,13 +16,15 @@ Difficult way
 
 Download the git repository with command git clone.
 
-Download the files
+Download the files from https://sourceforge.net/projects/sureside/files/
 
 1. anatomy_classification.params
 2. frozen_east_text_detection.pb
 3. marker_detection.params
 
 and place the files inside folder DR_Warnings/server/app_server/false_annotation/
+
+You
 
 
 
