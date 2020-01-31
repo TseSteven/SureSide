@@ -1,7 +1,8 @@
 # SureSide
 
 A simple radiological quality control applcation to detect falsely applied annotation on radiological image.
-It is a client server application with DICOM capability. By setting up auto DICOm routing from your hospital DICOM server to SureSdie server, image 
+SureSide is a client server application with DICOM capability. 
+By setting up auto DICOM routing from your hospital DICOM server to SureSdie server, radiological image will be analyzed and false marker image will be spotted out.
 
 
 ### [Server Installation]
