@@ -1,6 +1,6 @@
 # SureSide
 
-## Server Side
+### [Server Installation]
 
 Wrong side marker detection system for radiographic image
 
