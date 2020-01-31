@@ -1,0 +1,13 @@
+class,id
+digital_left_marker,0
+digital_right_marker,1
+ecg_clip,2
+nipple_marker,3
+ortho_implant,4
+pace_maker,5
+physical_ap_marker,6
+physical_custom_left_marker,7
+physical_custom_right_marker,8
+physical_left_marker,9
+physical_right_marker,10
+unknown,11

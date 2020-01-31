@@ -1,0 +1,93 @@
+class,id
+abdomen,0
+abdomen lateral,1
+ankle both,2
+ankle left ap,3
+ankle left lateral,4
+ankle right ap,5
+ankle right lateral,6
+calcaneum both,7
+calcaneum left ap,8
+calcaneum left lateral,9
+calcaneum right ap,10
+calcaneum right lateral,11
+chest,12
+chest al,13
+chest left lateral,14
+chest left oblique,15
+chest right lateral,16
+chest right oblique,17
+cx spine ap,18
+cx spine left anterior oblique,19
+cx spine left lateral,20
+cx spine right anterior oblique,21
+cx spine right lateral,22
+elbow both,23
+elbow left ap,24
+elbow left lateral,25
+elbow right ap,26
+elbow right lateral,27
+face ap,28
+face left lateral,29
+face right lateral,30
+femur both,31
+femur left ap,32
+femur left lateral,33
+femur right ap,34
+femur right lateral,35
+fingers,36
+foot both,37
+foot left ap,38
+foot left lateral,39
+foot right ap,40
+foot right lateral,41
+forearm left ap,42
+forearm left lateral,43
+forearm right ap,44
+forearm right lateral,45
+hand both,46
+hand left,47
+hand right,48
+hip both,49
+hip left ap,50
+hip left lateral,51
+hip right ap,52
+hip right lateral,53
+humerus left ap,54
+humerus left lateral,55
+humerus right ap,56
+humerus right lateral,57
+knee both,58
+knee left ap,59
+knee left lateral,60
+knee right ap,61
+knee right lateral,62
+leg both,63
+leg left ap,64
+leg left lateral,65
+leg right ap,66
+leg right lateral,67
+lower limb length,68
+lx spine ap,69
+lx spine left lateral,70
+lx spine right lateral,71
+shoulder axial,72
+shoulder left ap,73
+shoulder left lateral,74
+shoulder right ap,75
+shoulder right lateral,76
+skull ap,77
+skull left lateral,78
+skull right lateral,79
+skyline both,80
+skyline single,81
+toes,82
+tx spine ap,83
+tx spine left lateral,84
+tx spine right lateral,85
+whole-spine ap,86
+wrist both,87
+wrist left lateral,88
+wrist left pa,89
+wrist right lateral,90
+wrist right pa,91

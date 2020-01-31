@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex">
+  <title>NTWC DR Warning</title>
+  
+  <script src = "{{ url_for('static', filename = 'js/jquery-2.2.4.min.js') }}"</script>
+  <script type="text/javascript" src = "{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/bootstrap-table.min.css') }}">
+  <script type='text/javascript' src = "{{ url_for('static', filename = 'js/bootstrap-table.min.js') }}"></script>
+  
+  <script>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    $(window).load(function(){
+      var data = {{data|tojson}};
+      var columns = {{columns|tojson}};
+      $(function() {
+        $('#my_table').bootstrapTable({ 
+          data: data,
+          columns: columns
+        });
+      });
+    });
+
+    function popupFunction() {
+        
+
+    if (!$("input[name='user_reply']:checked").val()) {
+       alert("Nothing is checked!");
+    }
+    else {
+      alert("Your choice are saved. Warning window will not popup again!");
+    }
+          
+    }
+  </script> 
+  
+  <style type='text/css'>
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+  </style>
+   </head>
+   <body>
+      <div class="container">
+          <h1 class="display-4 bg-success text-center">Image Upload Delayed!</h1>
+          <img class="img-responsive center-block" src={{ url_for('static', filename='img/sendcheck/problem.svg' ) }} alt="Problem Image" width="300" height="300"> 
+          <br>
+          <table id="my_table"></table>
+          <br>
+          <div class="bg-danger text-center">
+          <p ><span class="glyphicon glyphicon-star"></span> The warning will automatically reopen after 5 mins, Please check following options to disable further warning! <span class="glyphicon glyphicon-star"></span></p>
+          </div>
+          <form action="{{ url_for('delay_upload') }}" method="post">
+            <div class="radio">
+              <label><input type="radio" name="user_reply"  value = "User handled">I have corrected the problem image! </label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="user_reply" value="False Warning">This is a false warning!</label>
+            </div>
+            <input type="hidden" name="msg_id" value={{msg_id}}>
+            <button id="mybutton" type="submit" class="btn btn-primary btn-lg btn-block" onclick="popupFunction()">Confirm</button>
+          </form>
+          <br>
+          <p>Click following button to check recent record of false warning</p>
+          <a href="{{url_for('delay_upload_record')}}" class="btn btn-warning btn-lg btn-block" role="button">View Recent Record</a>
+          <br>
+      </div>
+   </body>
+</html>

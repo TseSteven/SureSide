@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex">
+  <title>NTWC DR Warning</title>
+  
+  <script src = "{{ url_for('static', filename = 'js/jquery-2.2.4.min.js') }}"</script>
+  <script type="text/javascript" src = "{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/bootstrap-table.min.css') }}">
+  <script type='text/javascript' src = "{{ url_for('static', filename = 'js/bootstrap-table.min.js') }}"></script>
+  
+  <script>
+    $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    $(window).load(function(){
+      var data = {{data|tojson}};
+      var columns = {{columns|tojson}};
+      $(function() {
+        $('#my_table').bootstrapTable({ 
+          data: data,
+          columns: columns
+        });
+      });
+        var dNow = new Date();
+        var localdate= dNow.getDate() + ' - ' + (dNow.getMonth()+1) + ' - ' +  dNow.getFullYear() + ' ' + dNow.getHours() + ':' + dNow.getMinutes();
+        $('#currentDateTime').html("Warning issued at " + localdate)
+    });
+
+  </script> 
+  
+  <style type='text/css'>
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+  </style>
+   </head>
+   <body>
+      <div class="container">
+         {% if num == '1' %}
+            <h1 class="display-4 bg-danger text-center">Image Upload Delayed! (first warning)</h1>
+          {% else %}
+            <h1 class="display-4 bg-success text-center">Image Upload Delayed! (second warning)</h1>
+          {% endif %}
+          
+          <h2 class="text-center" id="currentDateTime"></h2>
+          <img class="img-responsive center-block" src={{ url_for('static', filename='img/sendcheck/problem.svg' ) }} alt="Problem Image" width="250" height="250"> 
+          <br>
+          <table id="my_table"></table>
+          <br>
+          {% if num == '1' %}
+              <div class="bg-danger text-center">
+              <p ><span class="glyphicon glyphicon-star"></span> The warning will automatically reopen after 5 mins if NO user feedback received! <span class="glyphicon glyphicon-star"></span></p>
+              </div>
+          <form action="{{ url_for('delay_upload') }}" method="post">
+            <div class="radio">
+              <label><input type="radio" name="user_reply"  value = "User handled">I have handled the problem study! </label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="user_reply" value="False Warning">This is a FALSE Warning!</label>
+            </div>
+            <input type="hidden" name="msg_id" value={{msg_id}}>
+            <input type="hidden" name="warning_type" value={{warning_type}}>
+            <button id="mybutton" type="submit" class="btn btn-primary btn-lg btn-block" >Confirm</button>
+          </form>
+            {% endif %}
+          <br>
+          <p>Click following button to check recent record of false warning</p>
+          <a href="{{url_for('delay_upload_record')}}" class="btn btn-warning btn-lg btn-block" role="button">View Recent Record</a>
+          <br>
+      </div>
+   </body>
+</html>
